@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">BILAL Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Contact Me - Your Name</title>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="php" href="mes.php">
+        </head>
+        <body>
+          <header>
+            <!-- Navigation links -->
+          </header>
+        
+          <section class="contact-section">
+            <div class="contact-content">
+              <h1>Contact Me</h1>
+              <p>If you're interested in working together, have questions, or just want to say hello, feel free to get in touch with me using the form below or through my email.</p>
+              <br><br><br>
+              <form id="contact-form"  >
+                &nbsp;&nbsp;<label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email Address" required> <br><br><br>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"  placeholder="Message"></textarea><br><br><br>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <button type="submit">Send Message</button>
+              </form>
+            </div>
+          </section>
+        
+          <section>
+            <p>
+                You can send a Email 
+            </p>
+            <p>
+                Click on button
+            </p>
+
+  <button id="compose-button">Compose Email</button>
+
+  <script>
+    // Get a reference to the button element
+    const composeButton = document.getElementById('compose-button');
+
+    // Add a click event listener to the button
+    composeButton.addEventListener('click', () => {
+      // Recipient's email address
+      const recipientEmail = 'recipient@example.com';
+
+      // Subject of the email
+      const emailSubject = 'Hello from your website!';
+
+      // Body of the email
+      const emailBody = 'Hi,\n\nI wanted to say hello through your website.';
+
+      // Construct the mailto URL
+      const mailtoURL = `mailto:${recipientEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+
+      // Open a new browser window with the mailto URL
+      window.open(mailtoURL);
+    });
+  </script>
+  <br><br><br><br>
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2023 BILAL portfoloi . All rights reserved.</p>
+        </div>
+      </footer>
+      
+          
+        
+        
+
+
+
+    
+</body>
+</html>
